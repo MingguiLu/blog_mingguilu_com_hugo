@@ -1,0 +1,11 @@
+<!--prevnext.html和prevnext_aside.html为自己后期创建的，用于分离<aside id="meta"> </aside>中的内容，把文档时间、tags和上下篇链接 拆分放到正文的上下区域。并在style.css中添加#prevnext>div，使上下篇链接位于正文底部；在#next,#prev中添加{float:left;},用于使上下篇链接左浮动至一列上
+-->
+{{ $baseurl := .Site.BaseURL }}
+
+<aside id="prevnext">
+{{ partial "prevnext.html" . }}
+</aside>
+
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+<meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
+<meta itemprop="url" content="{{ .Permalink }}">

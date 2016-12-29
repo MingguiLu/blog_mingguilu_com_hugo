@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+
+    {{ partial "meta.html" . }}
+
+    <base href="{{ .Site.BaseURL }}">
+    <title> {{ .Title }} - imkind.github.io </title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+
+    {{ partial "head_includes.html" . }}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Highlight.js -->
+    <!--
+	<script src="{{ .Site.BaseURL }}js/highlight.pack.js"></script>
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight/monokai.css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    -->
+    
+    <!-- 百度统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3d1fd52b11dc0bde2abdc4760452f3dc";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+    <!-- Google Analytics (分析) -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86857821-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+</head>
