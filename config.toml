@@ -1,12 +1,12 @@
-baseurl = "https://imkind.github.io/" 
+baseurl = "https://mingguilu.github.io/"
 title = "Continuous  Delivery"
 languageCode = "en-us"
 duoshuoShortname = "imkind"
-copyright = "Copyright (c) 2016 - 2022, IMkind; all rights reserved."
+copyright = "Copyright (c) 2016 - 2022, MingguiLu; all rights reserved."
 MetaDataFormat = "yaml"
 
 [author]
-    name = "IMkind"
+    name = "MingguiLu"
 
 [indexes]
     tag = "tags"

@@ -49,7 +49,7 @@ clone spf13.com的博客项目中`baseurl` 也是 `http://`
 
 > HTTPS provides a layer of encryption that prevents others from snooping on or tampering with traffic to your site.
 
-> When HTTPS is enforced, your site will only be served over HTTPS. Learn more. 
+> When HTTPS is enforced, your site will only be served over HTTPS. Learn more.
 
 此时，Hugo中配置的HTTP与Github Pages强制使用的HTTPS不一致，导致站点图片、css和js文件无法加载，访问时造成上图的情况
 
@@ -70,7 +70,7 @@ clone spf13.com的博客项目中`baseurl` 也是 `http://`
 然后，重新运行 `hugo` 生成静态站点，分别把改动push到IMkind_blog_hugo和imkind.github.io
 
 ##### 2.2 但是，我发现[spf13.com](http://spf13.com/)、[blog.coderzh.com](http://blog.coderzh.com/)、[nanshu.wang](http://nanshu.wang/)、[blog.bpcoder.com](http://blog.bpcoder.com/)等都能使用HTTP正常访问，这可能是因为绑定了自己的域名。
-	
+
 《Securing your GitHub Pages site with HTTPS》 https://help.github.com/articles/securing-your-github-pages-site-with-https/ ，第三段最后一句：
 
 > HTTPS is not supported for GitHub Pages using custom domains.
@@ -78,7 +78,3 @@ clone spf13.com的博客项目中`baseurl` 也是 `http://`
 #### *彩蛋*
 附上群主大大[@coderzh](http://www.coderzh.com/)如何一语道破天机
 ![](/media/hugo_tk_02.png)
-
-
-
-	

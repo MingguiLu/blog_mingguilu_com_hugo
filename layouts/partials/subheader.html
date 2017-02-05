@@ -1,11 +1,19 @@
 <header id="header">
     <figure>
-      <a href="/" border=0 id="logolink"><div class="icon-happy" id="logo"> </div></a>
+      <a href="/" border=0 id="logolink">
+        <img id="logo-img" src="/static/img/mingguilu.jpg">
+        <!--
+        <div class="" id="logo">
+
+        </div>
+        -->
+      </a>
     </figure>
-    <div id="byline">Hello , IMkind</div>
+    <div id="byline">ＭingguiLu Blog</div>
     <nav id="nav">
     {{ partial "nav.html" . }}
     {{ partial "social.html" . }}
+    {{ partial "reading.html" . }}
     {{ partial "advertise.html" . }}
     </nav>
 </header>
