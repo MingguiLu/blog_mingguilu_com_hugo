@@ -2,13 +2,13 @@
 date: 2017-02-14T11:57:04+08:00
 description: ""
 tags: []
-title: Hugo+GithubPages+Markdown的使用文档
+title: 关于JennyCh_Blog的使用文档
 topics: []
 ---
 
-###  一  准备
-
 ![](/media/hugo_github_markdown.png)
+
+###  一  准备
 
 ####   1. Hugo
 
@@ -51,13 +51,13 @@ Hugo是由Go语言实现的静态网站生成器。其特点是：简单、易�
 
 [blog](https://github.com/jennych/blog)		托管JennyCh Blog的静态博客网页的仓库
 
-[jennych_github_io](https://github.com/jennych/jennych_github_io)			托管JennyCh Blog的Hugo站点源代码的仓库
+[jennych_blog_hugo](https://github.com/jennych/jennych_blog_hugo)		托管JennyCh Blog的站点源代码的仓库
 
 [jennych.github.io](https://github.com/jennych/jennych.github.io)		托管JennyCh个人主页静态网页的仓库
 
-[jennych_blog_hugo](https://github.com/jennych/jennych_blog_hugo)		托管JennyCh个人主页的站点源代码的仓库
+[jennych_github_io](https://github.com/jennych/jennych_github_io)		托管JennyCh个人主页的站点源代码的仓库
 
-#####  启用Ｇithub Pages
+#####  启用Github Pages
 
 个人主页：例如[https://jennych.github.io](https://jennych.github.io) ，创建`Ｇithub帐号.github.io`的仓库，并上传个人主页静态页面项目即可
 
