@@ -1,6 +1,6 @@
 baseurl = "http://blog.mingguilu.com"
 title = "Continuous  Delivery"
-languageCode = "en-us"
+languageCode = "zh-CN"
 duoshuoShortname = "imkind"
 copyright = "Copyright (c) 2016 - 2021, MingguiLu; all rights reserved."
 MetaDataFormat = "yaml"
