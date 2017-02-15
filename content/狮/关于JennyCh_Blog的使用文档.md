@@ -18,6 +18,8 @@ Hugo是由Go语言实现的静态网站生成器。其特点是：简单、易�
 
 官方网站：[http://gohugo.io/](http://gohugo.io/)
 
+入门推荐：[Hugo中文文档](http://www.gohugo.org/)
+
 #####  安装:
 
 [下载适用的windows的hugo_x.xx.x_Windows-64bit.zip](https://github.com/spf13/hugo/releases)
@@ -32,6 +34,8 @@ Hugo是由Go语言实现的静态网站生成器。其特点是：简单、易�
 ##### 简述：
 
 [Git](https://git-scm.com/)是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目
+
+入门推荐：[廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)、[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 
 [GitHub](https://github.com/) 是一个面向开源及私有软件项目的托管平台，只支持 Git 作为唯一的版本库格式进行托管
 
@@ -61,11 +65,13 @@ Hugo是由Go语言实现的静态网站生成器。其特点是：简单、易�
 
 个人主页：例如[https://jennych.github.io](https://jennych.github.io) ，创建`Ｇithub帐号.github.io`的仓库，并上传个人主页静态页面项目即可
 
-项目主页：例如[https://jennych.github.io/blog/](https://jennych.github.io/blog/) ，创建随意名称的仓库，并上传项目的静态页面，并开启Ｇithub Pages，`settings`－－>`Ｇithub Pages`－－>`Source`－－>`master branch`－－> `Save`，即可访问项目主页`https://Github帐号.github.io/项目仓库名/`
+项目主页：例如[https://jennych.github.io/blog/](https://jennych.github.io/blog/) ，创建随意名称的仓库，并上传项目的静态页面，只要在根目录下存在index.html，即可开启Ｇithub Pages，`settings`－－>`Ｇithub Pages`－－>`Source`－－>`master branch`－－> `Save`，即可访问项目主页`https://Github帐号.github.io/项目仓库名/`
 
 ####  3. Markdown
 
 Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语法简洁明了、学习容易，而且功能比纯文本更强，导出格式随心所欲，因此有很多人用它写博客
+
+入门推荐：[Markdown——入门指南](http://www.jianshu.com/p/1e402922ee32/)
 
 [MarkdownPad](http://markdownpad.com/) 是Windows下的一个多功能Markdown编辑器
 
@@ -77,6 +83,16 @@ Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语�
 
 	$ hugo new site  my_website
 	Congratulations! Your new Hugo site is created in "D:\\Hellolworld\\my_website".
+
+Hugo站点下包含如下目录和文件：
+
+* archetypes：存放创建新文章时自动生成内容的模板
+* content：存放markdown格式的文章
+* layouts：存放网站前端的html模板
+* static：存放img、font、css、js等文件
+* public: 存放生成的静态网页内容
+* theme: 存放网站主题模板(一般将模板内容直接覆盖到根目录)
+* config.toml: 网站的配置文件，一般包括baseurl、title、languageCode等配置参数
 
 添加网站主题
 
@@ -98,7 +114,7 @@ Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语�
 	exampleSite/  layouts/  README.md  theme.toml
 
 	$ cp themes/hugo-smpl-theme/exampleSite/config.toml  .
-	# config.toml 为站点的配置文件
+	# 使用theme文件时，需要适配的config.toml(一般在theme根目录或exampleSite目录下可以找到)，并指定theme = "theme-name"参数才能启动网站
 
 新建文章
 
@@ -107,9 +123,9 @@ Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语�
 	$ hugo new post/技术文章/第一篇技术文章.md
 	D:\Hellolworld\my_website\content\post\技术文章\第一篇技术文章.md created
 
-测试Hugo静态站点
+启动Hugo静态站点
 
-	hugo  server  -t=主题名称
+	hugo server -t=主题名称
 	# 如果已将theme文件覆盖到站点根目录，无需使用-t指定主题文件，hugo server即可
 
 	$ hugo  server  -t=hugo-smpl-theme   -w
@@ -187,11 +203,9 @@ Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语�
 	404.html  categories/  fancybox/  font/       img/        js/    sitemap.xml
 	about/    css/         feed.xml   highlight/  index.html  post/  tags/
 
-
-
 #### 3. 推送本地Git版本至Github远程仓库
 
-当修改站点源代码或文章内容后，将修改内容提交为新版本，并上传到Github远程仓库
+当修改站点源代码或文章内容后，将修改内容提交为新版本，并推送到Github远程仓库jennych_blog_hugo
 
 	$ pwd
 	/d/Hellolworld/jennych_blog_hugo
@@ -204,6 +218,8 @@ Markdown 是一种轻量级的「标记语言」，它拥有很多优点，语�
 
 	$ git push origin master
 	# 将本地新版本推送到Github远程仓库
+
+生成新的静态页面后提交为新版本，并推送到Github远程仓库blog
 
 	$ hugo
 	# 将修改后的代码和文章转换生成新的静态页面
