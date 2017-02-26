@@ -1,7 +1,7 @@
 ---
 date: 2017-02-14T11:57:04+08:00
 description: ""
-tags: []
+tags: ["JennyCh","hugo","Github Pages","Markdown"]
 title: 关于JennyCh_Blog的使用文档
 topics: []
 ---
