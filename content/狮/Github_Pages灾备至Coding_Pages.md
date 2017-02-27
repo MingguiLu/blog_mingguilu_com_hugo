@@ -79,6 +79,23 @@ topics:
 
 ### 4. 至此，一次push即可同时推送到Github和Coding
 
+	$ git push  origin master 
+	对象计数中: 13, 完成.
+	Delta compression using up to 4 threads.
+	压缩对象中: 100% (13/13), 完成.
+	写入对象中: 100% (13/13), 1.68 MiB | 368.00 KiB/s, 完成.
+	Total 13 (delta 5), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+	To git@github.com:mingguilu/blog.mingguilu.com.git			# 推送至Github远程仓库
+	   c5e9106..ebb5fca  master -> master
+	对象计数中: 13, 完成.
+	Delta compression using up to 4 threads.
+	压缩对象中: 100% (13/13), 完成.
+	写入对象中: 100% (13/13), 1.68 MiB | 0 bytes/s, 完成.
+	Total 13 (delta 5), reused 0 (delta 0)
+	To git@git.coding.net:Mingguilu/blog.mingguilu.com.git		# 推送至Coding远程仓库
+	   c5e9106..ebb5fca  master -> master
+
 ### 5. 开启Coding仓库的Pages服务并绑定域名
 
 ![](/media/170226_01_05_01.png)
