@@ -1,4 +1,0 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:mingguilu/blog.mingguilu.com.git
-	url = git@git.coding.net:Mingguilu/blog.mingguilu.com.git
