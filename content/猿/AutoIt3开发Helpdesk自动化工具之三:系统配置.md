@@ -201,9 +201,9 @@ topics: []
 
     WinWaitActive("计算机名/域更改","欢迎加入 awesomeit.com 域")
     SLEEP(500)
-    ControlClick("计算机名/域更改","欢迎加入 awesomeit.com 域","Button1","left",1)
-    
-![](/media/170423_01_03_06.jpg)   
+    ControlClick("计算机名/域更改","欢迎加入 awesomeit.com 域","Button1","left",1) 
+     
+为了兼容可能弹出的提示框，使用while循环结合if条件判断，做应对的操作：如果8秒钟之内弹出“帐户名与安全标识间无任何映射完成”的提示框，则按下回车键关闭提示框并跳出循环；如果没有弹出这个提示框，则8秒之后结束循环
      
     Local $i = 0
         While $i <= 8000
@@ -218,6 +218,8 @@ topics: []
             	  $i = $i + 1000
            EndIf
     WEnd
+    
+![](/media/170423_01_03_06.jpg) 
     
     WinWaitActive("计算机名/域更改","确定")
     SLEEP(500)
